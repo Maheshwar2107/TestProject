@@ -8,17 +8,22 @@ pipeline {
 	        }
 	    stage('Build'){
 		    steps{
-		        echo 'Build on Main Done'		        
+		        echo 'Build on Test Branch Done'		        
 		   }
 	        }
 	   	stage('Test'){
 		    steps{
-		        echo 'Test on Main Done'
+		        echo 'Test on Test Branch Done'
 	    	    }
 	        }
 	   	stage('Deploy'){
 		    steps{
-		        echo 'Deploy on Main Done'
+		        echo 'Deploy on Test Branch Done'
+	    	    }
+	        }
+	    	   	stage('Publish'){
+		    steps{
+		        echo 'Publish on Test Branch Done'
 	    	    }
 	        }
     }
